@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --declaration-color: #f8f0e3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  scroll-behavior: smooth;
+}
+#about-page-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #111;
+  /* background-image: url("/Material/About-BG.jpg"); */
+}
+.about-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 4%;
+  text-transform: uppercase;
+  color: var(--declaration-color);
+}
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+section.about-paragraph {
+  color: var(--declaration-color);
+  width: 40%;
+  opacity: 0;
+}
+section.about-paragraph h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin-bottom: 10%;
+}
+section.about-paragraph p {
+  font-size: 1.33rem;
+}
+section.about-image {
+  width: 30%;
+  text-align: right;
+  margin-bottom: 1%;
+  opacity: 0;
+  cursor: pointer;
+}
+section.about-image img {
+  width: 100%;
+}
+
+/* =================== Key Frames =================== */
+/* ------------------- Image Dropping Animation ------------------- */
+@keyframes image-dropping {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+/* ------------------- About Paragraph Appearance Animation ------------------- */
+@keyframes about-appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* =================== Media Queries =================== */
+/* ------------------- max Width of 576px ------------------- */
+@media only screen and (max-width: 576px) {
+  .about-content {
+    margin-bottom: 25%;
+    align-items: flex-end;
+  }
+  .about-title {
+    font-size: 1.7rem;
+  }
+  section.about-paragraph {
+    width: 50%;
+  }
+  section.about-paragraph h2 {
+    font-size: 1.5rem;
+  }
+  section.about-paragraph p {
+    font-size: 0.85rem;
+  }
+  section.about-image {
+    margin-bottom: 0%;
+  }
+}
+/* ------------------- Min Width of 576px ------------------- */
+@media only screen and (min-width: 576px) {
+  .about-content {
+    margin-bottom: 25%;
+    align-items: flex-end;
+  }
+  .about-title {
+    font-size: 1.7rem;
+  }
+  section.about-paragraph {
+    width: 50%;
+  }
+  section.about-paragraph h2 {
+    font-size: 1.5rem;
+  }
+  section.about-paragraph p {
+    font-size: 0.85rem;
+  }
+  section.about-image {
+    margin-bottom: 0%;
+  }
+}
+
+/* ------------------- Min Width of 768px ------------------- */
+@media only screen and (min-width: 768px) {
+  .about-content {
+    margin-bottom: 15%;
+  }
+  .about-title {
+    font-size: 2rem;
+  }
+  section.about-paragraph {
+    width: 50%;
+  }
+  section.about-paragraph h2 {
+    font-size: 1.5rem;
+  }
+  section.about-paragraph p {
+    font-size: 0.85rem;
+  }
+  section.about-image {
+    margin-bottom: 0%;
+  }
+}
+
+/* ------------------- Min Width of 1200px ------------------- */
+@media only screen and (min-width: 1200px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+  .about-content {
+    margin-bottom: 10%;
+  }
+  section.about-paragraph h2 {
+    font-size: 2.2rem;
+  }
+  section.about-paragraph p {
+    font-size: 1.1rem;
+  }
+}
+
+/* ------------------- Min Width of 1400px ------------------- */
+@media only screen and (min-width: 1400px) {
+  .about-title {
+    font-size: 3rem;
+    margin-top: 10%;
+  }
+
+  section.about-paragraph {
+    width: 40%;
+  }
+  section.about-paragraph h2 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-bottom: 10%;
+  }
+  section.about-paragraph p {
+    font-size: 1.33rem;
+    margin-bottom: 12%;
+  }
+}

@@ -1,0 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --declaration-color: #f8f0e3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
+}
+
+/* ------------------- Navbar ------------------- */
+nav {
+  display: flex;
+  width: 100%;
+  height: 11%;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+}
+nav .products-menu {
+  display: none;
+}
+nav ul input {
+  background-color: transparent;
+  /* outline: none; */
+  border: 0;
+  color: var(--declaration-color);
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.3rem;
+  border-bottom: 0.05rem solid #555;
+}
+nav ul input:hover {
+  color: #aaa;
+}
+#products-btn {
+  display: flex;
+  align-items: center;
+}
+#products-btn span {
+  display: flex;
+  align-items: flex-end;
+}
+#products-btn span i {
+  color: var(--declaration-color);
+  font-size: 0.9rem;
+  margin-left: 0.2rem;
+}
+.show-menu {
+  background-color: rgba(85, 85, 85, 0.23);
+  display: block;
+  position: absolute;
+  top: 2.3rem;
+  text-align: left;
+  font-size: 1rem;
+}
+.hide-menu {
+  display: none;
+}
+.colored-nav {
+  background-color: #111;
+  transition: 0.2s background-color ease-in-out, 0.2s box-shadow ease-in-out;
+  box-shadow: 0 0 0.3rem 0.2rem #333;
+}
+.logo {
+  width: 40%;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+#nav-buttons {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn {
+  text-align: center;
+  text-decoration: none;
+  border: 0.02rem solid #eee;
+  color: var(--declaration-color);
+  background-color: transparent;
+  font-size: 1.45rem;
+  width: 14%;
+  padding: 0.2rem 0;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out background-color, 0.2s ease-in-out color,
+    0.2s ease-in-out transform;
+  position: relative;
+}
+.btn:hover {
+  background-color: #eee;
+  color: #222;
+}
+.btn:nth-child(1),
+.btn:nth-child(2),
+.btn:nth-child(3),
+.btn:nth-child(4) {
+  border: 0;
+}
+.btn:nth-child(1):hover,
+.btn:nth-child(2):hover,
+.btn:nth-child(3):hover,
+.btn:nth-child(4):hover {
+  background-color: transparent;
+  color: var(--declaration-color);
+  transform: scale(1.1);
+}
+
+/* ------------------- first-page-container -------------------*/
+#first-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  background-repeat: no-repeat;
+  background-image: url(/Material/slate-background.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+.main-container {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+/* ------------------- Paragraphs Section ------------------- */
+.paragraphs-section {
+  color: var(--declaration-color);
+  width: 30%;
+  margin: 3.5% 0 0% 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paragraphs-container {
+  position: relative;
+}
+.paragraphs-section h5 {
+  width: 50%;
+  font-size: 2.2rem;
+  font-weight: 300;
+  position: relative;
+  opacity: 1;
+  letter-spacing: 0.2rem;
+  animation: typing-appearing 2.3s 2s 1 both;
+}
+.paragraphs-section .typing-cursor {
+  height: 2.2rem;
+  width: 42%;
+  background-color: var(--declaration-color);
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  opacity: 0;
+  animation: typing-cursor 2.35s 0.5s 1;
+}
+.paragraphs-section h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  animation: paragraphs-appearing 1s 3.8s backwards;
+}
+.paragraphs-section p {
+  font-size: 1.1rem;
+  animation: paragraphs-appearing 1s 5s backwards;
+}
+.paragraphs-section .buy-btn {
+  width: 35%;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 10%;
+  border: 0.2rem solid var(--declaration-color);
+  animation: 0.7s 6s infinite pulse, paragraphs-appearing 1s 5.5s backwards;
+}
+.paragraphs-section .buy-btn:hover {
+  transform: scale(1);
+  background-color: #eee;
+  color: #222;
+  animation: 0s infinite pulse, paragraphs-appearing 0s backwards;
+}
+::selection {
+  color: #222;
+  background: var(--declaration-color);
+}
+/* ------------------- Image container ------------------- */
+.image-container {
+  width: 42%;
+  margin-top: 4%;
+  animation: car-moving 2s 3s 1 backwards;
+}
+.image-container img {
+  width: 100%;
+}
+/* ------------------- Up Arrow ------------------- */
+.up-arrow {
+  width: 4rem;
+  height: 4rem;
+  border: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 0 0.5rem 0.1rem #555;
+  visibility: hidden;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  cursor: pointer;
+  transition: 0.2s ease background-color;
+  animation: 02s infinite ease-in-out pulse;
+}
+.up-arrow:hover {
+  background-color: #444;
+}
+.up-arrow img {
+  width: 40%;
+  height: 40%;
+  transition: 0.2s ease background-color;
+}
+.up-arrow:hover img {
+  background-color: #444;
+}
+/* =================== Key Frames =================== */
+
+/* ------------------- Typing Cursor Animation ------------------- */
+@keyframes typing-cursor {
+  0% {
+    opacity: 1;
+    width: 1%;
+  }
+  40% {
+    opacity: 1;
+    width: 42%;
+    left: 0;
+  }
+  60% {
+    width: 1%;
+    left: 40%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    width: 1%;
+  }
+}
+
+/* ------------------- Typing Appearing Animation ------------------- */
+@keyframes typing-appearing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ------------------- Pulse Animation ------------------- */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0.01rem 0.03rem var(--declaration-color);
+  }
+  50% {
+    box-shadow: 0 0 0.2rem 0.3rem var(--declaration-color);
+  }
+  100% {
+    box-shadow: 0 0 0.01rem 0.03rem var(--declaration-color);
+  }
+}
+
+/* ------------------- Paragraphs-appearing Animation ------------------- */
+@keyframes paragraphs-appearing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ------------------- Car Movement Animation ------------------- */
+@keyframes car-moving {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-300%, 0);
+    opacity: 0;
+  }
+  71% {
+    opacity: 0;
+    transform: translate(0%, 0);
+  }
+  80% {
+    opacity: 0;
+    transform: translate(50%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+/* =================== Media Queries =================== */
+/* ------------------- max Width of 576px ------------------- */
+@media only screen and (max-width: 576px) {
+  nav {
+    width: 100%;
+  }
+  .logo {
+    width: 15%;
+    font-size: 1.7rem;
+    letter-spacing: 0.5rem;
+  }
+  #nav-buttons {
+    width: 75%;
+  }
+  .btn {
+    font-size: 1rem;
+    width: 15%;
+    padding: 0.2rem 0;
+  }
+  .paragraphs-section {
+    width: 45%;
+    margin: 3.5% 0 0% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .paragraphs-section h5 {
+    width: 70%;
+    font-size: 1.3rem;
+  }
+  .paragraphs-section .typing-cursor {
+    height: 2.2rem;
+    width: 65%;
+  }
+  @keyframes typing-cursor {
+    0% {
+      opacity: 1;
+      width: 1%;
+    }
+    40% {
+      opacity: 1;
+      width: 62%;
+      left: 0;
+    }
+    60% {
+      width: 1%;
+      left: 60%;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      width: 1%;
+    }
+  }
+  .paragraphs-section h3 {
+    font-size: 2.2rem;
+  }
+  .paragraphs-section p {
+    font-size: 0.85rem;
+  }
+  .paragraphs-section .buy-btn {
+    width: 30%;
+    font-size: 0.85rem;
+  }
+}
+/* ------------------- Min Width of 576px ------------------- */
+@media only screen and (min-width: 576px) {
+  nav {
+    width: 100%;
+  }
+  .logo {
+    width: 15%;
+    font-size: 1.7rem;
+    letter-spacing: 0.5rem;
+  }
+  #nav-buttons {
+    width: 75%;
+  }
+  .btn {
+    font-size: 1rem;
+    width: 15%;
+    padding: 0.2rem 0;
+  }
+  .paragraphs-section {
+    width: 45%;
+    margin: 3.5% 0 0% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .paragraphs-section h5 {
+    width: 70%;
+    font-size: 1.3rem;
+  }
+  .paragraphs-section .typing-cursor {
+    height: 2.2rem;
+    width: 65%;
+  }
+  @keyframes typing-cursor {
+    0% {
+      opacity: 1;
+      width: 1%;
+    }
+    40% {
+      opacity: 1;
+      width: 62%;
+      left: 0;
+    }
+    60% {
+      width: 1%;
+      left: 60%;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      width: 1%;
+    }
+  }
+  .paragraphs-section h3 {
+    font-size: 2.2rem;
+  }
+  .paragraphs-section p {
+    font-size: 0.85rem;
+  }
+  .paragraphs-section .buy-btn {
+    width: 30%;
+    font-size: 0.85rem;
+  }
+}
+
+/* ------------------- Min Width of 768px ------------------- */
+@media only screen and (min-width: 768px) {
+  nav {
+    width: 100%;
+  }
+  .logo {
+    width: 20%;
+    font-size: 3rem;
+    letter-spacing: 0.7rem;
+  }
+  #nav-buttons {
+    width: 70%;
+  }
+  .btn {
+    font-size: 1.2rem;
+    width: 15%;
+    padding: 0.2rem 0;
+  }
+  .paragraphs-section {
+    width: 45%;
+    margin: 3.5% 0 0% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .paragraphs-section h5 {
+    width: 70%;
+    font-size: 1.3rem;
+  }
+  .paragraphs-section .typing-cursor {
+    height: 2.2rem;
+    width: 55%;
+  }
+  @keyframes typing-cursor {
+    0% {
+      opacity: 1;
+      width: 1%;
+    }
+    40% {
+      opacity: 1;
+      width: 52%;
+      left: 0;
+    }
+    60% {
+      width: 1%;
+      left: 50%;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      width: 1%;
+    }
+  }
+  .paragraphs-section h3 {
+    font-size: 2.2rem;
+  }
+  .paragraphs-section p {
+    font-size: 0.85rem;
+  }
+  .paragraphs-section .buy-btn {
+    width: 30%;
+    font-size: 0.85rem;
+  }
+}
+/* ------------------- Min Width of 1200px ------------------- */
+@media only screen and (min-width: 1200px) {
+  nav {
+    width: 100%;
+  }
+  .logo {
+    width: 37%;
+  }
+  #nav-buttons {
+    width: 50%;
+  }
+  .paragraphs-section {
+    width: 35%;
+  }
+  .paragraphs-section h5 {
+    font-size: 2rem;
+  }
+  .paragraphs-section .typing-cursor {
+    height: 2.2rem;
+    width: 55%;
+  }
+  @keyframes typing-cursor {
+    0% {
+      opacity: 1;
+      width: 1%;
+    }
+    40% {
+      opacity: 1;
+      width: 45%;
+      left: 0;
+    }
+    60% {
+      width: 1%;
+      left: 42%;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      width: 1%;
+    }
+  }
+  .paragraphs-section h3 {
+    font-size: 2.8rem;
+  }
+  .paragraphs-section p {
+    font-size: 1rem;
+  }
+  .paragraphs-section .buy-btn {
+    width: 30%;
+    font-size: 1.1rem;
+  }
+}
+
+/* ------------------- Min Width of 1400px ------------------- */
+@media only screen and (min-width: 1400px) {
+  .logo {
+    width: 40%;
+  }
+  #nav-buttons {
+    width: 55%;
+  }
+  .paragraphs-section {
+    width: 30%;
+  }
+  .paragraphs-section h5 {
+    font-size: 2.2rem;
+  }
+  .paragraphs-section .typing-cursor {
+    height: 2.2rem;
+    width: 42%;
+  }
+  @keyframes typing-cursor {
+    0% {
+      opacity: 1;
+      width: 1%;
+    }
+    40% {
+      opacity: 1;
+      width: 45%;
+      left: 0;
+    }
+    60% {
+      width: 1%;
+      left: 42%;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      width: 1%;
+    }
+  }
+  .paragraphs-section h3 {
+    font-size: 3rem;
+  }
+  .paragraphs-section p {
+    font-size: 1.1rem;
+  }
+  .paragraphs-section .buy-btn {
+    width: 32%;
+  }
+}
