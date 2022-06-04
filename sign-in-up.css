@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --declaration-color: #f8f0e3;
+  --text-background: rgba(17, 17, 17, 0.884);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  scroll-behavior: smooth;
+}
+#sign-up-page {
+  display: none;
+}
+#sign-in-page {
+  height: 100vh;
+  background-color: #111;
+  position: relative;
+  color: var(--declaration-color);
+}
+#sign-in-page h3 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--declaration-color);
+}
+#sign-in-page a {
+  color: rgb(225, 223, 186);
+}
+.sign-in-image {
+  position: absolute;
+  width: 20%;
+  left: 0;
+  bottom: 0;
+}
+#sign-in-form {
+  width: 50%;
+  height: 40rem;
+  background-color: #222;
+  margin: 2% auto;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#sign-in-form p:first-of-type {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+#sign-in-form p:first-of-type a {
+  margin-left: 1%;
+}
+#sign-in-form .user-data,
+input[type="button"] {
+  display: block;
+  width: 80%;
+  margin: 2% 0;
+  padding: 2% 1%;
+  font-size: 1.1rem;
+}
+#sign-in-form input[type="button"] {
+  background-color: rgb(225, 223, 186);
+  cursor: pointer;
+}
+#sign-in-form input[type="button"]:hover {
+  background-color: rgb(255, 252, 215);
+  cursor: pointer;
+}
+.keep-me-logged {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.keep-me-logged input[type="checkbox"] {
+  accent-color: var(--declaration-color);
+  margin-right: 2%;
+  transform: scale(1.5);
+}
+#sign-in-page h4 {
+  width: 80%;
+  font-size: 1.1rem;
+}
+.sign-in-icons {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.sign-in-icons img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  cursor: pointer;
+}

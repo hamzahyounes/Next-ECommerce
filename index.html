@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/about-style.css" />
     <link rel="stylesheet" href="/products-style.css" />
     <link rel="stylesheet" href="/news-style.css" />
+    <link rel="stylesheet" href="/sign-in-up.css" />
   </head>
   <body>
     <main>
@@ -209,13 +210,42 @@
       </div>
       <!--------------------- pre Last/Sign in Page  ------------------------>
       <section id="sign-in-page">
-        <form>
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
+        <h3>- Sign In -</h3>
+
+        <form id="sign-in-form">
+          <p>Not a member yet? <a href="#"> Register Now</a></p>
+          <input
+            type="text"
+            class="user-data"
+            placeholder="Email OR Username"
+          />
+          <input type="password" class="user-data" placeholder="Password" />
+          <div class="keep-me-logged">
+            <input type="checkbox" id="keep-me-logged" />
+            <label for="keep-me-logged">Keep me logged in</label>
+          </div>
+          <input type="button" value="LOGIN NOW" />
+          <a href="#">Forgot you password?</a>
+          <h4>Or sign in with</h4>
+          <div class="sign-in-icons">
+            <img src="./Material/Icons/apple.png" alt="" />
+            <img src="./Material/Icons/Google.png" alt="" />
+            <img src="./Material/Icons/FB.png" alt="" />
+            <img src="./Material/Icons/Twitter.png" alt="" />
+          </div>
+          <p>
+            &copy; 2022 Next. All rights reserved. By signing up, I agree to
+            Next's
+            <a href="#">Term of Service</a>
+          </p>
         </form>
+        <div class="sign-in-image">
+          <img src="./Material/Products/Cars/main-car05.png" />
+        </div>
       </section>
       <!--------------------- Last/Sign up Page  ------------------------>
-      <section id="sign-up-page">
+      <!-- <section id="sign-up-page">
+        <h3>Sign Up</h3>
         <form>
           <div class="client-name">
             <input type="text" placeholder="First Name" />
@@ -224,8 +254,22 @@
           <input type="text" placeholder="Username" />
           <input type="email" placeholder="E-mail" />
           <input type="password" placeholder="Password" />
+        </form> -->
+
+      <!-- <section id="sign-up-page">
+        <h3>Sign Up</h3>
+        <form>
+          <div class="client-name">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <input type="text" placeholder="Username" />
+          <input type="email" placeholder="E-mail" />
+          <input type="password" placeholder="Password" />
+          <label for="hamza">check this</label>
+          <input type="radio" value="Hamza" name="username" id="hamza" />
         </form>
-      </section>
+      </section> -->
       <!--------------------- Up Button  ------------------------------->
       <button class="up-arrow">
         <img src="/Material/up-arrow.png" alt="UP" />
