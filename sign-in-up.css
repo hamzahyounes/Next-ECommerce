@@ -16,6 +16,8 @@
   display: none;
 }
 #sign-in-page {
+  display: flex;
+  align-items: center;
   height: 100vh;
   background-color: #111;
   position: relative;
@@ -39,7 +41,7 @@
   width: 50%;
   height: 40rem;
   background-color: #222;
-  margin: 2% auto;
+  margin: 0% auto;
   position: relative;
   z-index: 1;
   display: flex;
@@ -71,11 +73,19 @@ input[type="button"] {
   background-color: rgb(255, 252, 215);
   cursor: pointer;
 }
+.email-alert,
+.password-alert {
+  width: 80%;
+  color: red;
+  text-align: left;
+  display: none;
+}
 .keep-me-logged {
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-top: 3%;
 }
 .keep-me-logged input[type="checkbox"] {
   accent-color: var(--declaration-color);
@@ -90,10 +100,235 @@ input[type="button"] {
   width: 40%;
   display: flex;
   justify-content: space-between;
+  margin: 2% 0 5% 0;
 }
 .sign-in-icons img {
-  width: 4rem;
-  height: 4rem;
+  width: 3.4rem;
+  height: 3.4rem;
   border-radius: 100%;
   cursor: pointer;
+}
+.sign-in-icons img:hover {
+  transform: scale(1.05);
+}
+
+/* =================== Media Queries =================== */
+/* ---------- Max Width 1200px ---------- */
+@media screen and (max-width: 1200px) {
+  #sign-in-page h3 {
+    font-size: 3rem;
+  }
+  .sign-in-image {
+    display: block;
+    width: 100%;
+  }
+  .sign-in-image img {
+    width: 100%;
+  }
+  #sign-in-form {
+    width: 60%;
+    height: 100%;
+    margin: 0% auto;
+    z-index: 1;
+  }
+  #sign-in-form p:first-of-type {
+    width: 95%;
+    margin-bottom: 5%;
+  }
+  #sign-in-form .copyrights-p {
+    text-align: center;
+    margin-top: 10%;
+    width: 70%;
+  }
+  #sign-in-form p:first-of-type a {
+    margin-left: 1%;
+  }
+  #sign-in-form .user-data,
+  input[type="button"] {
+    display: block;
+    width: 95%;
+    margin: 2% 0;
+    padding: 2% 1%;
+    font-size: 1.1rem;
+  }
+  #sign-in-form input[type="button"] {
+    background-color: rgb(225, 223, 186);
+    cursor: pointer;
+  }
+  #sign-in-form input[type="button"]:hover {
+    background-color: rgb(255, 252, 215);
+    cursor: pointer;
+  }
+  .keep-me-logged {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .keep-me-logged input[type="checkbox"] {
+    accent-color: var(--declaration-color);
+    margin-right: 2%;
+    transform: scale(1.5);
+  }
+  #sign-in-page h4 {
+    width: 95%;
+    font-size: 1.1rem;
+  }
+  .sign-in-icons {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0 5% 0;
+  }
+  .sign-in-icons img {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+/* ---------- Max Width 768px ---------- */
+@media screen and (max-width: 768px) {
+  #sign-in-page h3 {
+    font-size: 3rem;
+  }
+  .sign-in-image {
+    display: block;
+    width: 100%;
+  }
+  .sign-in-image img {
+    width: 100%;
+  }
+  #sign-in-form {
+    width: 80%;
+    height: 100%;
+    margin: 0% auto;
+    z-index: 1;
+  }
+  #sign-in-form p:first-of-type {
+    width: 95%;
+    margin-bottom: 5%;
+  }
+  #sign-in-form .copyrights-p {
+    text-align: center;
+    margin-top: 10%;
+    width: 70%;
+  }
+  #sign-in-form p:first-of-type a {
+    margin-left: 1%;
+  }
+  #sign-in-form .user-data,
+  input[type="button"] {
+    display: block;
+    width: 95%;
+    margin: 2% 0;
+    padding: 2% 1%;
+    font-size: 1.1rem;
+  }
+  #sign-in-form input[type="button"] {
+    background-color: rgb(225, 223, 186);
+    cursor: pointer;
+  }
+  #sign-in-form input[type="button"]:hover {
+    background-color: rgb(255, 252, 215);
+    cursor: pointer;
+  }
+  .keep-me-logged {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .keep-me-logged input[type="checkbox"] {
+    accent-color: var(--declaration-color);
+    margin-right: 2%;
+    transform: scale(1.5);
+  }
+  #sign-in-page h4 {
+    width: 95%;
+    font-size: 1.1rem;
+  }
+  .sign-in-icons {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0 5% 0;
+  }
+  .sign-in-icons img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+/* ---------- Max Width 576px ---------- */
+@media screen and (max-width: 576px) {
+  #sign-in-form {
+    background-color: #111;
+  }
+  #sign-in-page h3 {
+    font-size: 3rem;
+  }
+  .sign-in-image {
+    display: none;
+  }
+  #sign-in-form {
+    width: 100%;
+    height: 100%;
+    margin: 0% auto;
+    z-index: 1;
+  }
+  #sign-in-form p:first-of-type {
+    width: 95%;
+    margin-bottom: 5%;
+  }
+  #sign-in-form .copyrights-p {
+    text-align: center;
+    margin-top: 10%;
+    width: 70%;
+  }
+  #sign-in-form p:first-of-type a {
+    margin-left: 1%;
+  }
+  #sign-in-form .user-data,
+  input[type="button"] {
+    display: block;
+    width: 95%;
+    margin: 2% 0;
+    padding: 2% 1%;
+    font-size: 1.1rem;
+  }
+  #sign-in-form input[type="button"] {
+    background-color: rgb(225, 223, 186);
+    cursor: pointer;
+  }
+  #sign-in-form input[type="button"]:hover {
+    background-color: rgb(255, 252, 215);
+    cursor: pointer;
+  }
+  .keep-me-logged {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .keep-me-logged input[type="checkbox"] {
+    accent-color: var(--declaration-color);
+    margin-right: 2%;
+    transform: scale(1.5);
+  }
+  #sign-in-page h4 {
+    width: 95%;
+    font-size: 1.1rem;
+  }
+  .sign-in-icons {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0 5% 0;
+  }
+  .sign-in-icons img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .email-alert,
+  .password-alert {
+    width: 95%;
+  }
 }

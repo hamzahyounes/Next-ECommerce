@@ -23,7 +23,7 @@
       <div id="first-page-container">
         <nav>
           <a href="#first-page-container" class="logo">Next</a>
-          <div id="nav-buttons">
+          <div id="nav-buttons" class="hide-nav-menu">
             <a href="#first-page-container" class="btn">Home</a>
             <a href="#about-page-container" class="btn">About Us</a>
             <a href="#news-page-container" class="btn">News</a>
@@ -36,9 +36,13 @@
               </ul>
             </a>
 
-            <a href="#" class="btn">Log in</a>
-            <a href="#" class="btn">Sign up</a>
+            <a href="#sign-in-page" class="btn" id="signin-btn">Log in</a>
+            <a href="#" class="btn" id="signup-btn">Sign up</a>
+            <a href="#" style="display: none" class="btn" id="signout-btn"
+              >Sign out</a
+            >
           </div>
+          <button class="btn menu-btn"><i class="bi bi-list"></i></button>
         </nav>
         <div class="main-container">
           <section class="paragraphs-section">
@@ -210,30 +214,28 @@
       </div>
       <!--------------------- pre Last/Sign in Page  ------------------------>
       <section id="sign-in-page">
-        <h3>- Sign In -</h3>
-
         <form id="sign-in-form">
           <p>Not a member yet? <a href="#"> Register Now</a></p>
-          <input
-            type="text"
-            class="user-data"
-            placeholder="Email OR Username"
-          />
+          <input type="email" class="user-data" placeholder="Email" />
+          <p class="email-alert">This email is invalid</p>
           <input type="password" class="user-data" placeholder="Password" />
+          <p class="password-alert">
+            The password must be 8 characters at least.
+          </p>
           <div class="keep-me-logged">
             <input type="checkbox" id="keep-me-logged" />
             <label for="keep-me-logged">Keep me logged in</label>
           </div>
           <input type="button" value="LOGIN NOW" />
           <a href="#">Forgot you password?</a>
-          <h4>Or sign in with</h4>
+          <h4>Or log in with</h4>
           <div class="sign-in-icons">
             <img src="./Material/Icons/apple.png" alt="" />
             <img src="./Material/Icons/Google.png" alt="" />
             <img src="./Material/Icons/FB.png" alt="" />
             <img src="./Material/Icons/Twitter.png" alt="" />
           </div>
-          <p>
+          <p class="copyrights-p">
             &copy; 2022 Next. All rights reserved. By signing up, I agree to
             Next's
             <a href="#">Term of Service</a>
@@ -245,30 +247,6 @@
       </section>
       <!--------------------- Last/Sign up Page  ------------------------>
       <!-- <section id="sign-up-page">
-        <h3>Sign Up</h3>
-        <form>
-          <div class="client-name">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-          </div>
-          <input type="text" placeholder="Username" />
-          <input type="email" placeholder="E-mail" />
-          <input type="password" placeholder="Password" />
-        </form> -->
-
-      <!-- <section id="sign-up-page">
-        <h3>Sign Up</h3>
-        <form>
-          <div class="client-name">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-          </div>
-          <input type="text" placeholder="Username" />
-          <input type="email" placeholder="E-mail" />
-          <input type="password" placeholder="Password" />
-          <label for="hamza">check this</label>
-          <input type="radio" value="Hamza" name="username" id="hamza" />
-        </form>
       </section> -->
       <!--------------------- Up Button  ------------------------------->
       <button class="up-arrow">
@@ -277,5 +255,6 @@
     </main>
     <script src="/JSstyling.js"></script>
     <script src="/main.js"></script>
+    <script src="./signing.js"></script>
   </body>
 </html>

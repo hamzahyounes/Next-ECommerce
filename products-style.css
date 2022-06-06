@@ -209,14 +209,19 @@
     margin-top: 17%;
   }
   .categories-buttons {
-    width: 42%;
+    width: 24%;
+    display: block;
+    margin-bottom: 7%;
   }
   .categories-buttons input {
     font-size: 1.2rem;
   }
   .card {
-    width: 80%;
+    width: 95%;
     height: 30rem;
+  }
+  .add-to-cart {
+    font-size: 1rem;
   }
 }
 /* ------------------- Min Width of 576px ------------------- */
@@ -230,6 +235,7 @@
   }
   .categories-buttons input {
     font-size: 1.2rem;
+    width: 100% !important;
   }
   .card {
     width: 70%;
@@ -280,6 +286,10 @@
   }
   .categories-buttons {
     width: 22%;
+  }
+  .category-btn {
+    display: flex;
+    flex-direction: column;
   }
   .categories-buttons input {
     font-size: 1.5rem;

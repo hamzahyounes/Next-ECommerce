@@ -130,6 +130,42 @@
 }
 
 /* =================== Media Queries =================== */
+/* ------------------- max Width of 576px ------------------- */
+@media only screen and (max-width: 576px) {
+  .section-title {
+    font-size: 1.5rem;
+    padding: 12% 0 3% 0;
+  }
+  #slides-content h3 {
+    top: 70%;
+    font-size: 0.9rem;
+  }
+  .news-slider {
+    width: 90%;
+    height: 15rem;
+    margin-bottom: 6%;
+  }
+  .news-card {
+    width: 90%;
+    border-radius: 0.3rem;
+    margin: 6% 0 3% 0;
+  }
+
+  .news-paragraphs h3 {
+    font-size: 0.9rem;
+  }
+  .news-paragraphs p {
+    font-size: 0.7rem;
+  }
+  .news-card:hover .news-paragraphs {
+    top: 0%;
+  }
+  .news-card img {
+    width: 100%;
+    opacity: 0.7;
+    object-fit: cover;
+  }
+}
 /* ------------------- min Width of 576px ------------------- */
 @media only screen and (min-width: 576px) {
   .section-title {

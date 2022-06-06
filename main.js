@@ -1,163 +1,14 @@
-var data = {
-  Cars: [
-    {
-      id: 1,
-      image: "/Material/Products/Cars/car-1.png",
-      model: `Aventador LP 780-4`,
-      price: 231500,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 2,
-      image: "/Material/Products/Cars/car-2.png",
-      model: "Peugeot SUV 3008",
-      price: 35899,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 3,
-      image: "/Material/Products/Cars/car-3.png",
-      model: "McLaren 570S Spider",
-      price: 129770,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 4,
-      image: "/Material/Products/Cars/car-4.png",
-      model: "Ferrari 296 GTB",
-      price: 231500,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 5,
-      image: "/Material/Products/Cars/car-5.png",
-      model: "Lamborghini Huracan Evo",
-      price: 98400,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 6,
-      image: "/Material/Products/Cars/car-6.png",
-      model: "Maserati MC20",
-      price: 87200,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 7,
-      image: "/Material/Products/Cars/car-7.png",
-      model: "Audi R8 V10 quattro",
-      price: 942900,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 8,
-      image: "/Material/Products/Cars/car-8.png",
-      model: "Ford GT",
-      price: 400899,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-  ],
-  Motorcycles: [
-    {
-      id: 01,
-      image: "/Material/Products/Motorcycles/motorcycle-1.png",
-      model: "Aprilia RS-GP",
-      price: 10280,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 02,
-      image: "/Material/Products/Motorcycles/motorcycle-2.png",
-      model: "Ducati Desmosedici",
-      price: 9700,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 03,
-      image: "/Material/Products/Motorcycles/motorcycle-3.png",
-      model: "Honda RC213V",
-      price: 5620,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 04,
-      image: "/Material/Products/Motorcycles/motorcycle-4.png",
-      model: "KTM RC16",
-      price: 4275,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 05,
-      image: "/Material/Products/Motorcycles/motorcycle-5.png",
-      model: "Yamaha YZR-M1",
-      price: 8200,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-  ],
-  Scooters: [
-    {
-      id: 001,
-      image: "/Material/Products/Scooters/scooter-1.png",
-      model: "Keeway Sixties 300i",
-      price: 1090,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 002,
-      image: "/Material/Products/Scooters/scooter-2.png",
-      model: "Keewat Bieste 300",
-      price: 880,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 003,
-      image: "/Material/Products/Scooters/scooter-3.png",
-      model: "Greta Harper ZX Series-I",
-      price: 740,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 004,
-      image: "/Material/Products/Scooters/scooter-4.png",
-      model: "Raftaar Cruiser",
-      price: 1100,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 005,
-      image: "/Material/Products/Scooters/scooter-5.png",
-      model: "Raftaar Bmblebee",
-      price: 690,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-    {
-      id: 006,
-      image: "/Material/Products/Scooters/scooter-6.png",
-      model: "Bajaj Bolamb",
-      price: 943,
-      specs: `Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)`,
-    },
-  ],
-};
-var sliderData = {
-  images: [
-    "/Material/News/News-5.jpg",
-    "/Material/News/News-6.jpg",
-    "/Material/News/News-7.jpg",
-    "/Material/News/News-8.jpg",
-    "/Material/News/News-9.jpg",
-    "/Material/News/News-10.jpg",
-  ],
-  paragraphs: [
-    "David Reynolds will drive for the newly-named Kelly Grove Racing this season after leaving Erebus at the end of last year.",
-    "The Bathurst winner will switch to a Ford Mustang for the first timeand drive the number 26 car.",
-    "With Erebus’ former sponsor Penrite will team up with young gun Andre Heimgartner as Kelly formerly known as Kelly Racing.",
-    "He will team up with young gun Andre Heimgartner as Kelly Grove Racing released the first images.",
-    "An Italian rider winning the Italian Grand Prix on an Italian bike to keep the dream of an Italian world championship alive.",
-    "Francesco Bagnaia’s crucial second win of the season wasn’t  even the most notable part of the weekend.",
-  ],
-};
+let xhr = new XMLHttpRequest();
+xhr.open("GET", "./Data/productsData.json");
+xhr.send("");
 
+let xhr2 = new XMLHttpRequest();
+xhr2.open("GET", "./Data/sliderData.json");
+xhr2.send("");
+
+var menuBtn = document.querySelector(".menu-btn");
+var navMenu = document.querySelector("#nav-buttons");
+var menuBtnIcon = document.querySelector(".menu-btn i");
 var categoryBtns1 = document.querySelectorAll(".categories-buttons input");
 var categoryBtns2 = document.querySelectorAll("nav ul input");
 var categoryBtns = [...categoryBtns1, ...categoryBtns2];
@@ -169,7 +20,18 @@ var slideImage = document.querySelector(".sliding-img");
 var slideParagraph = document.querySelector("#slides-content h3");
 var currentCategory = "Cars";
 
-setProducts(data[currentCategory]);
+xhr.onreadystatechange = () => {
+  if (xhr.readyState === 4) {
+    if (xhr.status === 200) {
+      setProducts(JSON.parse(xhr.response)[currentCategory]);
+    }
+  }
+};
+menuBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("hide-nav-menu");
+  menuBtnIcon.classList.toggle("bi-list");
+  menuBtnIcon.classList.toggle("bi-x-lg");
+});
 var currentBtn = categoryBtns[0];
 categoryBtns.forEach((element) => {
   element.addEventListener("click", function (e) {
@@ -185,7 +47,7 @@ categoryBtns.forEach((element) => {
     currentBtn.classList.add("active-category-button");
     currentBtn.parentNode.classList.add("active-btn");
     cardsContainer.innerHTML = "";
-    setProducts(data[currentCategory]);
+    setProducts(JSON.parse(xhr.response)[currentCategory]);
   });
 });
 
@@ -239,21 +101,23 @@ function setProducts(products) {
 var index = 0;
 var sliderInterval;
 slidingButtons[1].addEventListener("click", function () {
-  slideImage.setAttribute("src", sliderData.images[index]);
-  slideParagraph.innerHTML = sliderData.paragraphs[index];
-  index === sliderData.images.length - 1 ? (index = 0) : index++;
+  slideImage.setAttribute("src", JSON.parse(xhr2.response).images[index]);
+  slideParagraph.innerHTML = JSON.parse(xhr2.response).paragraphs[index];
+  index === JSON.parse(xhr2.response).images.length - 1 ? (index = 0) : index++;
 });
 slidingButtons[0].addEventListener("click", function () {
-  slideImage.setAttribute("src", sliderData.images[index]);
-  slideParagraph.innerHTML = sliderData.paragraphs[index];
-  index === 0 ? (index = sliderData.images.length - 1) : index--;
+  slideImage.setAttribute("src", JSON.parse(xhr2.response).images[index]);
+  slideParagraph.innerHTML = JSON.parse(xhr2.response).paragraphs[index];
+  index === 0 ? (index = JSON.parse(xhr2.response).images.length - 1) : index--;
 });
 function playSliding() {
   sliderInterval = window.setInterval(function () {
-    slideImage.setAttribute("src", sliderData.images[index]);
-    slideParagraph.innerHTML = sliderData.paragraphs[index];
-    index === sliderData.images.length - 1 ? (index = 0) : index++;
-  }, 1500);
+    slideImage.setAttribute("src", JSON.parse(xhr2.response).images[index]);
+    slideParagraph.innerHTML = JSON.parse(xhr2.response).paragraphs[index];
+    index === JSON.parse(xhr2.response).images.length - 1
+      ? (index = 0)
+      : index++;
+  }, 1200);
 }
 function pauseSliding() {
   clearInterval(sliderInterval);

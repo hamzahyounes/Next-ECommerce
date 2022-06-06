@@ -229,6 +229,7 @@ nav ul input:hover {
   cursor: pointer;
   transition: 0.2s ease background-color;
   animation: 02s infinite ease-in-out pulse;
+  z-index: 3;
 }
 .up-arrow:hover {
   background-color: #444;
@@ -330,6 +331,8 @@ nav ul input:hover {
 @media only screen and (max-width: 576px) {
   nav {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .logo {
     width: 15%;
@@ -337,27 +340,56 @@ nav ul input:hover {
     letter-spacing: 0.5rem;
   }
   #nav-buttons {
-    width: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #111;
+    padding-bottom: 5%;
+  }
+  #nav-buttons a span {
+    margin: auto;
+  }
+  .show-nav-menu {
+  }
+  .hide-nav-menu {
+    display: none !important;
+  }
+  .show-menu {
+    display: block;
+    left: 100%;
+    top: 0%;
   }
   .btn {
     font-size: 1rem;
-    width: 15%;
+    width: 25%;
     padding: 0.2rem 0;
   }
+  #products-btn {
+  }
+  .menu-btn {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+  }
   .paragraphs-section {
-    width: 45%;
+    width: 95%;
     margin: 3.5% 0 0% 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .paragraphs-section h5 {
-    width: 70%;
+    width: 45%;
     font-size: 1.3rem;
   }
   .paragraphs-section .typing-cursor {
     height: 2.2rem;
-    width: 65%;
+    width: 32;
   }
   @keyframes typing-cursor {
     0% {
@@ -366,12 +398,12 @@ nav ul input:hover {
     }
     40% {
       opacity: 1;
-      width: 62%;
+      width: 47%;
       left: 0;
     }
     60% {
       width: 1%;
-      left: 60%;
+      left: 45%;
       opacity: 1;
     }
 
@@ -389,40 +421,75 @@ nav ul input:hover {
   .paragraphs-section .buy-btn {
     width: 30%;
     font-size: 0.85rem;
+  }
+  .buy-btn {
+    display: block;
+  }
+  .image-container {
+    display: none;
   }
 }
 /* ------------------- Min Width of 576px ------------------- */
 @media only screen and (min-width: 576px) {
   nav {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .logo {
     width: 15%;
-    font-size: 1.7rem;
-    letter-spacing: 0.5rem;
+    font-size: 2rem;
+    letter-spacing: 0.6rem;
   }
   #nav-buttons {
-    width: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #111;
+    padding-bottom: 5%;
+  }
+  #nav-buttons a span {
+    margin: auto;
+  }
+  .hide-nav-menu {
+    display: none !important;
   }
   .btn {
     font-size: 1rem;
-    width: 15%;
+    width: 25%;
     padding: 0.2rem 0;
   }
+  .menu-btn {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.7rem;
+  }
+  .menu-btn:hover {
+    transform: none !important;
+  }
   .paragraphs-section {
-    width: 45%;
+    width: 95%;
     margin: 3.5% 0 0% 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .paragraphs-section h5 {
-    width: 70%;
+    width: 45%;
     font-size: 1.3rem;
   }
   .paragraphs-section .typing-cursor {
     height: 2.2rem;
-    width: 65%;
+    width: 32;
+  }
+
+  .image-container {
+    display: none;
   }
   @keyframes typing-cursor {
     0% {
@@ -431,12 +498,12 @@ nav ul input:hover {
     }
     40% {
       opacity: 1;
-      width: 62%;
+      width: 100%;
       left: 0;
     }
     60% {
       width: 1%;
-      left: 60%;
+      left: 50%;
       opacity: 1;
     }
 
@@ -445,14 +512,22 @@ nav ul input:hover {
       width: 1%;
     }
   }
+  .paragraphs-section h5 {
+    width: 100%;
+    text-align: center;
+  }
   .paragraphs-section h3 {
+    text-align: center;
     font-size: 2.2rem;
   }
   .paragraphs-section p {
-    font-size: 0.85rem;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
   }
   .paragraphs-section .buy-btn {
-    width: 30%;
+    width: 20%;
     font-size: 0.85rem;
   }
 }
@@ -468,7 +543,20 @@ nav ul input:hover {
     letter-spacing: 0.7rem;
   }
   #nav-buttons {
-    width: 70%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    transform: translate(0, 35%);
+    background-color: transparent;
+  }
+  .hide-nav-menu {
+    display: flex !important;
+  }
+  .menu-btn {
+    display: none;
   }
   .btn {
     font-size: 1.2rem;
@@ -483,6 +571,7 @@ nav ul input:hover {
     align-items: center;
   }
   .paragraphs-section h5 {
+    text-align: left;
     width: 70%;
     font-size: 1.3rem;
   }
@@ -512,14 +601,20 @@ nav ul input:hover {
     }
   }
   .paragraphs-section h3 {
+    text-align: left;
     font-size: 2.2rem;
   }
   .paragraphs-section p {
+    width: 100%;
+    text-align: left;
     font-size: 0.85rem;
   }
   .paragraphs-section .buy-btn {
     width: 30%;
     font-size: 0.85rem;
+  }
+  .image-container {
+    display: block;
   }
 }
 /* ------------------- Min Width of 1200px ------------------- */

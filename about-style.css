@@ -84,13 +84,15 @@ section.about-image img {
 @media only screen and (max-width: 576px) {
   .about-content {
     margin-bottom: 25%;
-    align-items: flex-end;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
   .about-title {
     font-size: 1.7rem;
   }
   section.about-paragraph {
-    width: 50%;
+    width: 90%;
   }
   section.about-paragraph h2 {
     font-size: 1.5rem;
@@ -99,7 +101,8 @@ section.about-image img {
     font-size: 0.85rem;
   }
   section.about-image {
-    margin-bottom: 0%;
+    margin-bottom: 15%;
+    width: 50%;
   }
 }
 /* ------------------- Min Width of 576px ------------------- */

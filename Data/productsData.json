@@ -1,0 +1,141 @@
+{
+  "Cars": [
+    {
+      "id": 1,
+      "image": "/Material/Products/Cars/car-1.png",
+      "model": "Aventador LP 780-4",
+      "price": 231500,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": 2,
+      "image": "/Material/Products/Cars/car-2.png",
+      "model": "Peugeot SUV 3008",
+      "price": 35899,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": 3,
+      "image": "/Material/Products/Cars/car-3.png",
+      "model": "McLaren 570S Spider",
+      "price": 129770,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": 4,
+      "image": "/Material/Products/Cars/car-4.png",
+      "model": "Ferrari 296 GTB",
+      "price": 231500,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": 5,
+      "image": "/Material/Products/Cars/car-5.png",
+      "model": "Lamborghini Huracan Evo",
+      "price": 98400,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": 6,
+      "image": "/Material/Products/Cars/car-6.png",
+      "model": "Maserati MC20",
+      "price": 87200,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": 7,
+      "image": "/Material/Products/Cars/car-7.png",
+      "model": "Audi R8 V10 quattro",
+      "price": 942900,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": 8,
+      "image": "/Material/Products/Cars/car-8.png",
+      "model": "Ford GT",
+      "price": 400899,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    }
+  ],
+  "Motorcycles": [
+    {
+      "id": "01",
+      "image": "/Material/Products/Motorcycles/motorcycle-1.png",
+      "model": "Aprilia RS-GP",
+      "price": 10280,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": "02",
+      "image": "/Material/Products/Motorcycles/motorcycle-2.png",
+      "model": "Ducati Desmosedici",
+      "price": 9700,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": "03",
+      "image": "/Material/Products/Motorcycles/motorcycle-3.png",
+      "model": "Honda RC213V",
+      "price": 5620,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": "04",
+      "image": "/Material/Products/Motorcycles/motorcycle-4.png",
+      "model": "KTM RC16",
+      "price": 4275,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": "05",
+      "image": "/Material/Products/Motorcycles/motorcycle-5.png",
+      "model": "Yamaha YZR-M1",
+      "price": 8200,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    }
+  ],
+  "Scooters": [
+    {
+      "id": "001",
+      "image": "/Material/Products/Scooters/scooter-1.png",
+      "model": "Keeway Sixties 300i",
+      "price": 1090,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": "002",
+      "image": "/Material/Products/Scooters/scooter-2.png",
+      "model": "Keewat Bieste 300",
+      "price": 880,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": "003",
+      "image": "/Material/Products/Scooters/scooter-3.png",
+      "model": "Greta Harper ZX Series-I",
+      "price": 740,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": "004",
+      "image": "/Material/Products/Scooters/scooter-4.png",
+      "model": "Raftaar Cruiser",
+      "price": 1100,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": "005",
+      "image": "/Material/Products/Scooters/scooter-5.png",
+      "model": "Raftaar Bmblebee",
+      "price": 690,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    },
+    {
+      "id": "006",
+      "image": "/Material/Products/Scooters/scooter-6.png",
+      "model": "Bajaj Bolamb",
+      "price": 943,
+      "specs": "Maximum Speed= 328kph (204mph), 0-100kph (62mph)= 3.2s, 0-200kph (124mph)= 9.6s, Maximum Power= 570PS (562bhp), Maximum Torque= 600Nm (443lbft)"
+    }
+  ]
+}
