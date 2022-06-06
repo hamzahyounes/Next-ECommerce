@@ -90,7 +90,7 @@ function setProducts(products) {
               <p class="product-model">${product.model}</p>
               <p class="product-price">Price: ${product.price}$</p>
               <p class="product-specs">${product.specs}</p>
-              <button class="add-to-cart">Add to cart</button>
+              <button onclick= "handleAddToCart()" class="add-to-cart">Add to cart</button>
             </div>
           </div>
     `;

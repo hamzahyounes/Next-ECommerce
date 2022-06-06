@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/products-style.css" />
     <link rel="stylesheet" href="/news-style.css" />
     <link rel="stylesheet" href="/sign-in-up.css" />
+    <link rel="stylesheet" href="./toast.css" />
   </head>
   <body>
     <main>
@@ -30,14 +31,30 @@
             <a href="#products-page-container" id="products-btn" class="btn">
               <span>Products<i class="bi bi-caret-down-fill"></i></span>
               <ul class="products-menu">
-                <input type="button" value="Cars" />
-                <input type="button" value="Motorcycles" />
-                <input type="button" value="Scooters" />
+                <input
+                  style="width: 100%; padding: 0 0.3rem"
+                  type="button"
+                  value="Cars"
+                />
+                <input
+                  style="width: 100%; padding: 0 0.3rem"
+                  type="button"
+                  value="Motorcycles"
+                />
+                <input
+                  style="width: 100%; padding: 0 0.3rem"
+                  type="button"
+                  value="Scooters"
+                />
               </ul>
             </a>
 
             <a href="#sign-in-page" class="btn" id="signin-btn">Log in</a>
             <a href="#" class="btn" id="signup-btn">Sign up</a>
+
+            <a href="#" style="display: none" class="btn" id="cart-icon"
+              ><i class="bi bi-cart"></i
+            ></a>
             <a href="#" style="display: none" class="btn" id="signout-btn"
               >Sign out</a
             >
@@ -106,7 +123,7 @@
               <div class="under-line"></div>
             </div>
             <div class="category-btn">
-              <input type="button" value="Motorcycles" />
+              <input style="width: 100%" type="button" value="Motorcycles" />
               <div class="under-line"></div>
             </div>
             <div class="category-btn">
@@ -248,6 +265,10 @@
       <!--------------------- Last/Sign up Page  ------------------------>
       <!-- <section id="sign-up-page">
       </section> -->
+      <!--------------------- Toast Page  ------------------------>
+      <section id="toast-container">
+        <div class="toast-panner"></div>
+      </section>
       <!--------------------- Up Button  ------------------------------->
       <button class="up-arrow">
         <img src="/Material/up-arrow.png" alt="UP" />
