@@ -58,7 +58,7 @@ let doLoginCheck = () => {
       emailInput.value = "";
       passwordInput.value = "";
       signedIn = true;
-      showToastPanner("You signed in successfully");
+      showToastPanner("You Logged in successfully", true);
       handleLoginView(signedIn);
     }
     console.log({ signedIn });
@@ -69,24 +69,30 @@ doLoginCheck();
 let signOut = () => {
   signOutBtn.addEventListener("click", () => {
     signedIn = false;
-    showToastPanner("You signed out");
+    showToastPanner("You signed out", true);
     handleLoginView(signedIn);
   });
 };
 signOut();
 
 let handleAddToCart = () => {
-  if (signedIn) showToastPanner("Added to cart successfully");
-  else showToastPanner("Sign in to access your cart");
+  if (signedIn) showToastPanner("Added to cart successfully", true);
+  else showToastPanner("Log in to access your cart", false);
 };
-function showToastPanner(message) {
+function showToastPanner(message, option) {
+  toastPanner.style.right = "1.5rem";
   setTimeout(() => {
     if (window.innerWidth >= 1400) {
       toastPanner.style.width = "20rem";
       toastPanner.style.height = "5rem";
     }
-    toastPanner.innerHTML = message;
-    toastPanner.style.right = "1.5rem";
+    if (option) {
+      toastPanner.innerHTML = `<i style="margin: 0 1rem; font-size: 1.5rem" class="bi bi-check-circle-fill"></i> ${message}`;
+      toastPanner.style.color = "rgb(0, 228, 0)";
+    } else {
+      toastPanner.innerHTML = `<i style="margin: 0 1rem; font-size: 1.5rem" class="bi bi-exclamation-circle-fill"></i> ${message}`;
+      toastPanner.style.color = "tomato";
+    }
     setTimeout(() => {
       toastPanner.style.right = "-100%";
     }, 3000);
